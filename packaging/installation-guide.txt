@@ -1,0 +1,35 @@
+Opening HeyNav for the first time
+=================================
+
+1.  Drag HeyNav onto the Applications folder in this window.
+
+2.  Open HeyNav from Applications.
+
+    macOS will say it "could not verify HeyNav is free of malware".
+    Click Done. (This step matters — it's what makes the button in
+    step 3 appear.)
+
+3.  Open System Settings > Privacy & Security, scroll down to the
+    Security section, and click "Open Anyway" next to HeyNav.
+
+4.  Click Open on the dialog that appears.
+
+That's it — only needed once. HeyNav opens normally from then on.
+
+
+Why does macOS block it?
+------------------------
+
+Because HeyNav isn't signed with a paid Apple developer account.
+macOS hasn't found anything wrong with it; it simply can't verify an
+app that has no paid account behind it, and HeyNav is free.
+
+All of the source code is public, so you can read exactly what it
+does, or build it yourself:
+
+    https://github.com/HimansuThapa2059/HeyNav
+
+An app you build yourself is never blocked this way.
+
+
+Requires macOS 26.5 or later.

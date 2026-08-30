@@ -36,6 +36,7 @@ dmg: release ## Build a drag-to-Applications disk image
 	@mkdir -p dist/stage
 	@ditto -x -k dist/HeyNav.zip dist/stage
 	@ln -s /Applications dist/stage/Applications
+	@cp packaging/installation-guide.txt "dist/stage/Installation Guide.txt"
 	@hdiutil create -volname HeyNav -srcfolder dist/stage -ov -format UDZO -quiet dist/HeyNav.dmg
 	@rm -rf dist/stage
 	@echo "→ dist/HeyNav.dmg  ($$(du -h dist/HeyNav.dmg | cut -f1))"

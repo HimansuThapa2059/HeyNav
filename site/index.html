@@ -136,13 +136,14 @@
     <h2>Install</h2>
     <ol>
       <li>Open the downloaded <code>.dmg</code> and drag HeyNav to Applications.</li>
-      <li>Launch it. macOS will block it once — dismiss the warning.</li>
-      <li>Open <strong>System Settings → Privacy &amp; Security</strong>, scroll down, click <strong>Open Anyway</strong>.</li>
+      <li>Launch it. macOS blocks it — click <strong>Done</strong>.</li>
+      <li>Open <strong>System Settings → Privacy &amp; Security</strong>, scroll to <strong>Security</strong>, and click <strong>Open Anyway</strong>.</li>
+      <li>Click <strong>Open</strong> on the dialog that follows. Once only.</li>
     </ol>
 
     <details>
       <summary>Why does macOS block it?</summary>
-      <p>Because HeyNav isn't signed with a paid Apple developer account. macOS says the same thing about every app that isn't — it's not a judgement about the app itself.</p>
+      <p>macOS says it "could not verify HeyNav is free of malware". It hasn't found anything — it just can't check an app with no paid developer account behind it, and HeyNav is free.</p>
       <p>HeyNav is free and the source is public, so there's no account behind it. You can read every line, or build it yourself and skip this entirely.</p>
       <p>If you'd rather use the terminal:</p>
       <pre><code>xattr -dr com.apple.quarantine /Applications/HeyNav.app</code></pre>

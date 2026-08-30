@@ -25,15 +25,23 @@ Download the latest release, open the `.dmg`, and drag **HeyNav** to Application
 
 ### First launch
 
-HeyNav isn't signed with an Apple Developer ID, so macOS blocks it the first time and may
-say it is damaged. It isn't — macOS says that about any app it can't trace to a paid
-developer account. The source is in this repository if you'd like to check it, or build it
-yourself with the steps below.
+HeyNav isn't signed with an Apple Developer ID, so the first time you open it macOS says:
+
+> Apple could not verify "HeyNav" is free of malware that may harm your Mac or compromise
+> your privacy.
+
+It hasn't found anything — it simply can't check an app that has no paid developer account
+behind it, and HeyNav is free. The source is in this repository if you'd like to read it,
+or build it yourself with the steps below.
 
 To open it:
 
-1. Double-click HeyNav and let the warning appear, then dismiss it.
-2. Open **System Settings → Privacy & Security**, scroll down, and click **Open Anyway**.
+1. Double-click HeyNav, then click **Done** on that dialog. This step matters: it's what
+   makes the button in step 3 appear.
+2. Open **System Settings → Privacy & Security** and scroll to the **Security** section.
+3. Next to *"HeyNav" was blocked to protect your Mac*, click **Open Anyway** and
+   authenticate.
+4. Click **Open** on the dialog that follows.
 
 Or, from the terminal:
 
