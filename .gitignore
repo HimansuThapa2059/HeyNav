@@ -1,0 +1,23 @@
+build/
+DerivedData/
+.build/
+.swiftpm/
+
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+*.xccheckout
+
+.DS_Store
+
+*.xcarchive
+*.app
+*.dmg
+
+*.mobileprovision
+*.p12
+*.cer
+# Stale source snapshots
+*.zip
+
+dist/
